@@ -3,6 +3,7 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@re
 
 import styles from './tailwind.css';
 import globalStyles from './styles/globals.css';
+import NavBar from './components/NavBar';
 
 export const links: LinksFunction = () => [
 	{ rel: 'stylesheet', href: styles },
@@ -17,6 +18,7 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
+			    <NavBar />
 				<Outlet />
 				<ScrollRestoration />
 				<Scripts />
